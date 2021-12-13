@@ -3,7 +3,6 @@
 - [Installing](#installing)
 - [Example](#example)
 - [Details](#details)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Installing
