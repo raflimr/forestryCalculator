@@ -14,11 +14,13 @@
 
 ## Example
 1. Buat file di Visual Studio Code misal main.go
-2. Lalu buat go modules misal nama modulus ambilLibrary    
+2. Lalu buat go modules misal nama modulus ambilLibrary 
+    (diketik di terminal - untuk new terminal bisa menggunakan shotcut ctrl + shift + `)    
     ```
     go mod init ambilLibrary
     ```
 3. Install Library
+    (diketik di terminal - untuk new terminal bisa menggunakan shotcut ctrl + shift + `)
     ```
     go get github.com/rafllimr/forestryCalculator
     ```
@@ -38,6 +40,10 @@
     	var cariZonaUtm = forestryCalculator.FindUTM(108, 12, 25, "LS", "BT")
 	    fmt.Println(cariZonaUtm)
     }
+    ```
+5. Jalankan program
+    ```
+    go run main.go
     ```
 ## Details
 See Go Package documentation for more details: https://pkg.go.dev/github.com/rafllimr/forestryCalculator
