@@ -1,5 +1,5 @@
 // Forestry Calculator adalah rumus perhitungan yang telah diprogram sehingga
-// hanya memasukkan paramater nya saja, nilai dari perhitugannya akan keluar
+// hanya memasukkan paramater nya saja, nilai dari perhitugannya akan keluar.
 // Untuk sementara waktu hanya bisa dijalankan dalam CLI
 package forestryCalculator
 
