@@ -48,7 +48,6 @@
 ## Details
 See Go Package documentation for more details: https://pkg.go.dev/github.com/rafllimr/forestryCalculator
 
-
 ## License
 Licensed under MIT License.
 See the LICENSE file.

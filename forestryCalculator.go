@@ -1,6 +1,5 @@
-// Forestry Calculator adalah rumus perhitungan yang telah diprogram sehingga
-// hanya memasukkan paramater nya saja, nilai dari perhitugannya akan keluar.
-// Untuk sementara waktu hanya bisa dijalankan dalam CLI
+// Forestry Calculator adalah rumus perhitungan yang telah diprogram jadi hanya dengan
+// menginput sesuai instruksi dalam program, maka akan menghasil Zona UTM atau Decimal Degree yang sedang dicari
 package forestryCalculator
 
 import (
@@ -8,11 +7,12 @@ import (
 	"strconv"
 )
 
-type JenisData struct {
-	derajat, menit, detik float64
-}
-
 // Rumus Perhitungan Pencarian Decimal Degree
+// Decimal Degree = Derajat + Menit + Detik
+// Contoh
+// Derajat = 108 Tidak perlu diubah
+// Menit = Menit/60 diubah ke jam
+// Detik = Detik/3600 diubak ke jam
 func DMS(derajat, menit, detik float64) float64 {
 	menit = menit / 60
 	detik = detik / 3600
@@ -21,6 +21,8 @@ func DMS(derajat, menit, detik float64) float64 {
 }
 
 // Rumus Pencarian Zona UTM
+// Zona UTM = Decimal Degree/6 + 30(Jika memilih BT) + (nama Lintang (S or N)
+// Tapi saat hasil pembagian memiliki koma nilai zona UTM ditambah 1 dan jika tidak tetap mulai dari 0
 func FindUTM(derajat, menit, detik float64, lintang, bujur string) string {
 	var zona float64
 	var zonaInt int
